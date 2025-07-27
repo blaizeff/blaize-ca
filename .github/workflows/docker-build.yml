@@ -22,7 +22,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }} .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }} \
+            -f nextjs-docker/Dockerfile nextjs-docker
           docker push ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }}
 
       - name: Deploy via SSH

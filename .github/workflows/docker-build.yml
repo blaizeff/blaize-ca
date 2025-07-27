@@ -22,8 +22,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/your-app:${{ env.SHORT_SHA }} .
-          docker push ${{ secrets.DOCKER_USERNAME }}/your-app:${{ env.SHORT_SHA }}
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }} .
+          docker push ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }}
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
@@ -33,6 +33,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd docker-stack
-            docker pull ${{ secrets.DOCKER_USERNAME }}/your-app:${{ env.SHORT_SHA }}
+            docker pull ${{ secrets.DOCKER_USERNAME }}/blaize-ca-web:${{ env.SHORT_SHA }}
             docker-compose down
             IMAGE_TAG=${{ env.SHORT_SHA }} docker-compose up -d

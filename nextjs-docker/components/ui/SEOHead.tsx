@@ -30,7 +30,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     "description": description,
     "url": "https://blaize.ca",
     "email": "me@blaize.ca",
-    "image": "https://blaize.ca/profile-photo.jpg",
+    "image": "https://blaize.ca/images/profile-photo.jpg",
     "sameAs": [
       "https://github.com/blaizeff",
       "https://linkedin.com/in/blaizeff",
@@ -56,9 +56,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       {noindex && <meta name="robots" content="noindex,nofollow" />}
       
       <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
       
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Blaize" />

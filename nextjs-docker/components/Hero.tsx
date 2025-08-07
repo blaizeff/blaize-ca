@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
               ></div>
               <div className="absolute rounded-full inset-2 overflow-hidden">
                 <Image
-                  src="/profile-photo.jpg"
+                  src="/images/profile-photo.jpg"
                   alt="Blaize - Full Stack Developer"
                   width={400}
                   height={400}

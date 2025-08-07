@@ -61,7 +61,7 @@ const About: NextPage = () => {
                   <div className="order-2 lg:order-1">
                     <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-2xl">
                       <Image
-                        src="/profile-photo.jpg"
+                        src="/images/profile-photo.jpg"
                         alt="Blaize - Full Stack Developer"
                         fill
                         className="object-cover"

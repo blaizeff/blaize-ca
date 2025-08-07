@@ -10,7 +10,7 @@ export const siteConfig = {
     bio: "I build beautiful and reliable web applications. I specialize in turning ideas into reality with a focus on user experience and performance.",
     location: "Canada",
     email: "me@blaize.ca",
-    profileImage: "/profile-photo.jpg",
+    profileImage: "/images/profile-photo.jpg",
   },
 
   contact: {

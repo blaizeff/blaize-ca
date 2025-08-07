@@ -20,7 +20,7 @@ const Projects: NextPage = () => {
         description={`Explore ${siteConfig.personal.name}'s portfolio of projects. From web applications to mobile apps, see how ideas become reality through clean code and user-centered design.`}
       />
 
-      <main className="section-padding pt-20 sm:pt-24 lg:pt-28">
+      <main className="section-padding pt-24 lg:pt-28">
         <div className="container-custom">
           <div className="text-center mb-12 lg:mb-16 animate-fade-in-up">
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 lg:mb-4 text-primary">

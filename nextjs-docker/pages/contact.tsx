@@ -44,7 +44,7 @@ const Contact: NextPage = () => {
         description="Get in touch with Blaize via email, schedule a meeting, or connect on social media. Let's discuss your next project!"
       />
 
-      <main className="section-padding min-h-screen pt-20 sm:pt-24 lg:pt-28">
+      <main className="section-padding min-h-screen pt-24 lg:pt-28">
         <div className="container-custom">
           <div className="text-center mb-12 lg:mb-16 animate-fade-in-up">
             <h1 className="font-display text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6">
